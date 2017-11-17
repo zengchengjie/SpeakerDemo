@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a10062376.speakerdemo.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="扬声器测试"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/openSpeaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开扬声器"
+        tools:layout_editor_absoluteY="2dp"
+        tools:layout_editor_absoluteX="145dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/closeSpeaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭扬声器"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="73dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp" />
+    <Button
+        android:id="@+id/playMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="334dp"
+        tools:layout_editor_absoluteX="16dp"
+        android:text="播放"
+        android:layout_marginBottom="121dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/openSpeaker"
+        android:layout_alignEnd="@+id/openSpeaker" />
+    <Button
+        android:id="@+id/stopMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="334dp"
+        tools:layout_editor_absoluteX="268dp"
+        android:text="暂停"
+        android:layout_alignBaseline="@+id/playMusic"
+        android:layout_alignBottom="@+id/playMusic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
